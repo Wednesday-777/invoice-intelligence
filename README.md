@@ -8,3 +8,12 @@ Forecast freight costs for incoming vendor invoices
 Flag risky or abnormal invoices for manual approval
 
 Reduce financial leakage and manual review workload
+# Tech Stack
+ML: scikit-learn (Linear Regression, Decision Tree, Random Forest)
+
+Data: pandas, SQLite
+
+App: Streamlit
+
+Model persistence: joblib
+
