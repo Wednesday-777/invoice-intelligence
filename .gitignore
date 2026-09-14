@@ -1,6 +1,4 @@
-# Trained models
-freight_cost_prediction/models/
-invoice_flagging/models/
+
 
 # Python cache
 __pycache__/

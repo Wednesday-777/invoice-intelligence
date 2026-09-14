@@ -2,7 +2,10 @@ import joblib
 import pandas as pd
 
 
-MODEL_PATH = r"D:\invoice-intelligence\freight_cost_prediction\models\predict_freight_model.pkl"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH = BASE_DIR / "freight_cost_prediction" / "models" / "predict_freight_model.pkl"
 
 def load_model(model_path: str=MODEL_PATH):
     

@@ -1,8 +1,11 @@
 import joblib
 import pandas as pd
 
-MODEL_PATH = r"D:\invoice-intelligence\invoice_flagging\models\predict_flag_invoice.pkl"
-SCALER_PATH = r"D:\invoice-intelligence\invoice_flagging\models\scaler.pkl"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH = BASE_DIR / "invoice_flagging" / "models" / "predict_flag_invoice.pkl"
+SCALER_PATH = BASE_DIR / "invoice_flagging" / "models" / "scaler.pkl"
 
 FEATURES = [
     "invoice_quantity",
